@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="https://cdn.spencers.zone/images/SLFavicon.ico">
+    <title id="page-title">Please choose</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f9f9f9;
+        }
+
+        .container {
+            text-align: center;
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .button-group {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+
+        .btn {
+            background-color: #007bff;
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+            transition: background-color 0.2s;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+
+        footer {
+            margin-top: 2rem;
+            font-size: 0.8rem;
+        }
+
+        footer a {
+            color: grey;
+            text-decoration: underline;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Please choose your option</h1>
+        <p>Please select an option below:</p>
+        
+        <div class="button-group">
+            <a href="/emailpreferences" class="btn">Change my email preferences</a>
+            <a href="/donotcontactrequest" class="btn">Do Not Contact Me Again</a>
+        </div>
+    </div>
+
+    <footer>
+        <a href="https://policies.spencers.zone/privacy">Privacy Policy</a>
+        <a href="https://policies.spencers.zone/use">Use Agreement</a>
+    </footer>
+
+    <script>
+        const titleElement = document.getElementById('page-title');
+        
+        // Change to Website name after 3 seconds
+        setTimeout(() => {
+            titleElement.innerText = "The Spencer Ledger Website";
+            
+            // Change back to original after another 3 seconds
+            setTimeout(() => {
+                titleElement.innerText = "Please choose";
+            }, 3000);
+            
+        }, 3000);
+    </script>
+
+</body>
+</html>
