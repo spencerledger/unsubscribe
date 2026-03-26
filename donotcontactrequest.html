@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Email Feedback Form</title>
+  <link rel="icon" href="https://cdn.spencers.zone/images/SLFavicon.ico" type="image/x-icon" />
+
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    iframe {
+      width: 100vw;
+      height: 100vh;
+      border: none;
+      display: block;
+    }
+  </style>
+
+  <script>
+    let titles = ["Do Not Contact Request", "The Spencer Ledger Website"];
+    let index = 0;
+
+    setInterval(() => {
+      document.title = titles[index];
+      index = (index + 1) % titles.length;
+    }, 3000);
+  </script>
+</head>
+
+<body>
+  <iframe 
+    src="https://form.jotform.com/260846397152363"
+    allow="geolocation; microphone; camera; fullscreen; payment"
+    allowfullscreen>
+  </iframe>
+</body>
+</html>
