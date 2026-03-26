@@ -78,16 +78,29 @@
     <script>
         const titleElement = document.getElementById('page-title');
         
-        // Change to Website name after 3 seconds
         setTimeout(() => {
             titleElement.innerText = "The Spencer Ledger Website";
             
-            // Change back to original after another 3 seconds
             setTimeout(() => {
                 titleElement.innerText = "Please choose";
             }, 3000);
             
         }, 3000);
+    </script>
+
+    <!-- Cookie popup -->
+    <script type="text/javascript" src="https://global.apexia-cdn.com/cookie-popup/cookie-code.js"></script>
+    <script>
+        window.start.init({
+            Palette: "palette2",
+            Mode: "floating left",
+            Theme: "block",
+            Message: "This website uses services from Microsoft Corporation and Jotform Incorporated to process your data. See more on our policy page.",
+            ButtonText: "I understand",
+            Location: "https://policies.spencers.zone/",
+            Time: "0",
+            RemoveBranding: ""
+        });
     </script>
 
 </body>
