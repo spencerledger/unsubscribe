@@ -8,24 +8,22 @@
     <style>
         body {
             font-family: Arial, Helvetica, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
             margin: 0;
-            background-color: #ffffff;
-            color: #333;
+            padding-top: 60px; /* Positions it at the top with a clean gap */
             text-align: center;
+            color: #333;
+            background-color: #ffffff;
         }
 
-        .container {
-            max-width: 800px;
-            padding: 20px;
+        .wrapper {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 20px;
         }
 
         h1 {
             font-size: 48px;
-            margin-bottom: 20px;
+            margin-bottom: 25px;
             color: #2c3e50;
         }
 
@@ -35,7 +33,8 @@
             margin: 10px 0;
         }
 
-        .gdpr-notice {
+        /* Adds the specific top margin to the last paragraph without needing a class */
+        p:last-of-type {
             margin-top: 30px;
         }
 
@@ -51,14 +50,14 @@
 </head>
 <body>
 
-    <div class="container">
+    <div class="wrapper">
         <h1>We have received your request</h1>
         
         <p>Once we review your request, we will remove all of your data from our contact list. If there's any issues, we'll contact you.</p>
         
         <p>Please note, it could <strong>take up to 48 hours for changes to take effect</strong>.</p>
 
-        <p class="gdpr-notice">
+        <p>
             This is <strong>not a Right to Erasure request under Article 17 of the UK GDPR</strong>. To exercise your rights, please email <a href="mailto:privacy@spencers.zone">privacy@spencers.zone</a>.
         </p>
     </div>
