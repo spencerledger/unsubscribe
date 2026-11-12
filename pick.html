@@ -3,105 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="https://cdn.spencers.zone/images/SLFavicon.ico">
-    <title id="page-title">Please choose</title>
+    <title>the spencers.zone framework</title>
+    <link rel="icon" type="image/x-icon" href="https://cdn.spencers.zone/images/triad-favicon.ico">
     <style>
         body {
-            font-family: sans-serif;
+            font-family: Arial, sans-serif;
             display: flex;
-            flex-direction: column;
-            align-items: center;
             justify-content: center;
+            align-items: center;
             height: 100vh;
             margin: 0;
-            background-color: #f9f9f9;
+            background-color: #ffffff;
+            color: #000000;
+            text-align: center;
         }
 
         .container {
-            text-align: center;
-            background: white;
-            padding: 2rem;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            max-width: 600px;
+            padding: 20px;
         }
 
-        .button-group {
+        .header-brand {
             display: flex;
-            flex-direction: column;
-            gap: 1rem;
-            margin-top: 1.5rem;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 30px;
         }
 
-        .btn {
-            background-color: #007bff;
-            color: white;
-            padding: 12px 24px;
-            text-decoration: none;
-            border-radius: 4px;
+        .logo {
+            height: 40px;
+            margin-right: 12px;
+        }
+
+        .brand-name {
+            font-size: 32px;
             font-weight: bold;
-            transition: background-color 0.2s;
+            letter-spacing: -0.5px;
         }
 
-        .btn:hover {
-            background-color: #0056b3;
+        h1 {
+            font-size: 26px;
+            font-weight: bold;
+            margin-top: 0;
+            margin-bottom: 20px;
         }
 
-        footer {
-            margin-top: 2rem;
-            font-size: 0.8rem;
+        p {
+            font-size: 15px;
+            line-height: 1.5;
+            margin: 12px 0;
         }
 
-        footer a {
-            color: grey;
+        a {
+            color: #0000ee;
             text-decoration: underline;
-            margin: 0 10px;
+        }
+
+        a:visited {
+            color: #551a8b;
+        }
+
+        .log-link {
+            display: inline-block;
+            margin-top: 15px;
         }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <h1>Please choose your option</h1>
-        <p>Please select an option below:</p>
-        
-        <div class="button-group">
-            <a href="/emailpreferences" class="btn">Change my email preferences</a>
-            <a href="/donotcontactrequest" class="btn">Do Not Contact Me Again</a>
+        <div class="header-brand">
+            <img src="https://cdn.spencers.zone/images/triad-logo.png" alt="Logo" class="logo">
+            <span class="brand-name">spencers.zone</span>
         </div>
+
+        <h1>Temporarily Down for Maintenance</h1>
+        <p>We are performing scheduled maintenance. You cannot currently choose your email preferences.</p>
+        <p>To unsubscribe or submit a Do Not Contact Request, please email <a href="mailto:privacy@spencers.zone">privacy@spencers.zone</a> instead.</p>
+        <p><a href="https://status.spencers.zone/maintenance/1123536" class="log-link">View maintenance log</a></p>
     </div>
-
-    <footer>
-        <a href="https://policies.spencers.zone/privacy">Privacy Policy</a>
-        <a href="https://policies.spencers.zone/use">Use Agreement</a>
-    </footer>
-
-    <script>
-        const titleElement = document.getElementById('page-title');
-        
-        setTimeout(() => {
-            titleElement.innerText = "The Spencer Ledger Website";
-            
-            setTimeout(() => {
-                titleElement.innerText = "Please choose";
-            }, 3000);
-            
-        }, 3000);
-    </script>
-
-    <!-- Cookie popup -->
-    <script type="text/javascript" src="https://global.apexia-cdn.com/cookie-popup/cookie-code.js"></script>
-    <script>
-        window.start.init({
-            Palette: "palette2",
-            Mode: "floating left",
-            Theme: "block",
-            Message: "This website uses services from Microsoft Corporation and Jotform Incorporated to process your data. See more on our policy page.",
-            ButtonText: "I understand",
-            Location: "https://policies.spencers.zone/",
-            Time: "0",
-            RemoveBranding: ""
-        });
-    </script>
 
 </body>
 </html>
